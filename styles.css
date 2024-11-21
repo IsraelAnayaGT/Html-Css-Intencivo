@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .container{
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+    flex-direction: column;
+    background: rgba(255, 25, 236, 0.477);
+  }
+
+  .container a{
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: large;
+  }
+
+  .container :hover{
+    color: green;
+    transition: all 0.3s ease;
+  }
+
+  .container div h1{
+    margin: 1rem;
+  }
+
+  .container div {
+    margin-top: 1rem;
+  }

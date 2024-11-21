@@ -1,0 +1,76 @@
+body{
+    font-family: sans-serif;
+    background-color: aqua;
+
+}
+
+.imagnes-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.imagnes-container .imagen{
+    position: relative;
+    margin-right: -20px;
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.imagnes-container .imagen img{
+    width: 200px;
+    height: 200px;
+    transition: transform 0.32s ease-in-out;
+}
+
+.imagnes-container .imagen .nombre{
+    position: absolute;
+    background-color: black;
+    border-radius: 5px;
+    color: white;
+    display: none;
+    min-width: 100px;
+    width: 150px;
+    top: -50px; 
+    padding: 10px 15px;
+}
+
+.imagnes-container .imagen .nombre .text{
+    display: inline-block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    width: 150px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.imagnes-container .imagen:hover .nombre{
+    display: flex;
+    transform: translateY(-20px);
+}
+
+.imagnes-container .imagen .nombre::before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    left: 40%;
+    bottom: -20px;
+    border-top: solid 10px black;
+    border-left: solid 10px transparent;
+    border-right: solid 10px transparent;
+    border-bottom: solid 10px transparent;
+}
+
+.imagnes-container .imagen:hover img{
+    transform: translateY(-20px);
+}
+
+@media (max-width: 680px){
+    .imagnes-container{
+        flex-direction: column;
+        height: 180vh;
+    }
+}

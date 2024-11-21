@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+  font-family: sans-serif;
+}
+.container {
+  background: #202020;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.boxcontainer {
+  background: palevioletred;
+  height: 400px;
+  width: 400px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.uno {
+  background: orangered;
+  width: 200px;
+  height: 200px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.uno-hijo{
+  background: red;
+  width: 100px;
+  height: 100px;
+  border-radius: 15px;
+}
